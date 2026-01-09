@@ -64,7 +64,7 @@ python dynamic_prompt.py
 - [langchain-huggingface](https://pypi.org/project/langchain-huggingface/)
 
 ## Notes
-
+- I have used uv for creating environment and installing packages
 - Place your API keys in the `.env` file.
 - The weather tool uses the public [wttr.in](https://wttr.in/) API.
 
