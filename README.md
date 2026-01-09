@@ -43,6 +43,14 @@ python rag.py
 
 - Answers questions about computers, laptops, Apple products, and fruits using a small in-memory knowledge base.
 
+### Dynamic Prompt example
+
+Run the dynamic prompt agent example
+
+```bash
+python dynamic_prompt.py
+```
+
 ## Requirements
 
 - Python 3.9+
