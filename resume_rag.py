@@ -43,5 +43,5 @@ agent=create_agent(
         "Base your answers strictly on the retrieved context."
 )
 
-response=agent.invoke({"messages":[HumanMessage("what are the technical skills mentioned in the resume?")]})
+response=agent.invoke({"messages":[HumanMessage("what are the technical skills mentioned in the resume only on software?")]})
 print(response["messages"][-1].content)
