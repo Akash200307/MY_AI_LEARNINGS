@@ -21,7 +21,7 @@ embeddings=HuggingFaceEmbeddings(model='sentence-transformers/all-MiniLM-L6-v2')
 model=ChatGroq(model='moonshotai/kimi-k2-instruct-0905')
 
 vector_store=FAISS.from_texts(texts=text,embedding=embeddings)
-vector_store.save_local("resume.index")
+vector_store.save_local("resume_rag.index")
 retriever=vector_store.as_retriever(search_kwargs={
     'k':3
 })
