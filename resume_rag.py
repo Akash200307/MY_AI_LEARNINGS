@@ -64,22 +64,7 @@ retriever_tool = create_retriever_tool(
     retriever=retriever,
 )
 
-prompt=ChatPromptTemplate.from_messages([
-    ("system",
-     """You are a precise resume analysis assistant.
-     Your only source of truth is the candidate's resume.
-     
-     Rules you MUST follow:
-     1. ALWAYS use the search_resume tool FIRST
-     2. Base EVERY answer strictly on retrieved content
-     3. If information is not found → say clearly "Information not found in resume"
-     4. Be concise and factual
-     5. Use bullet points when listing skills/experiences"""
-     ),
-     MessagesPlaceholder("messages"),
-     MessagesPlaceholder("agent_scratchpad")
-     
-])
+
 
 
 
@@ -104,4 +89,4 @@ print(response["messages"][-1].content)
 
 excution_time=end-st
 
-print(f"{excution_time:.3f}"seconds)
+print(f"{excution_time:.3f}",seconds)
